@@ -1,0 +1,2 @@
+# Modelo-SEIRD
+Modelo SEIRD
