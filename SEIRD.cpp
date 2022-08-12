@@ -17,7 +17,7 @@ double pd =0.03;//fracción de casos asintomáticos que mueren
 
 //Funciones del Modelo Seird
 
-double fSt( double t, double St, double Ia, double Is, double Et, double Rt, double Dt){
+double fSt( double t, double St, double Ia, double Is, double Et, double Rt, double Dt){ //Funcion de 
 	
 	return (double) -1*(St/n)*(b*rb*Ia+Is);
 	
@@ -57,7 +57,7 @@ double fDt( double t, double St, double Ia, double Is, double Et, double Rt, dou
 	
 }
 
-void RK4S(double ci[6], double a, double b , double h)  {
+void RK4S(double ci[6], double a, double b , double h)  { // Función Runge Kutta 4: ...... con acceso directo a la función del modelo guardada directamente en memoria???? ... 
 	
 	int nf=6,n=0,d=0 ;
 	double (*(fns[6]))( double t, double St, double Ia, double Is, double Et, double Rt, double Dt) = {fSt,fIa,fIs,fEt,fRt,fDt};
